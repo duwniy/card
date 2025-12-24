@@ -86,7 +86,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(DuplicateTransactionException.class)
     public ResponseEntity<ErrorResponseDto> handleDuplicateTransactionException(DuplicateTransactionException ex) {
         ErrorResponseDto error = ErrorResponseDto.builder()
-                .code("duplicate_transaction")
+                .code("invalid_data")
                 .message(ex.getMessage())
                 .timestamp(LocalDateTime.now())
                 .build();
