@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://postgres:5432/card_db}
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:postgres}
+
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+
+  liquibase:
+    enabled: true
+
+# Logging для продакшена
+logging:
+  level:
+    root: WARN
+    org.example.card: INFO
+    org.springframework.web: WARN
+    org.springframework.security: WARN
+    org.hibernate.SQL: WARN
+
+# CBU API для prod
+cbu:
+  api:
+    base-url: https://cbu.uz/ru/arkhiv-kursov-valyut/json
+    timeout: 10000
+
+server:
+  port: ${PORT:8080}
+
+# JWT для продакшена (обязательно из переменных окружения!)
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: ${JWT_EXPIRATION:86400000}

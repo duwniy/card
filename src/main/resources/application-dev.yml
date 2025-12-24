@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/card_db
+    username: postgres
+    password: postgres
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  liquibase:
+    enabled: true
+
+# Logging для разработки
+logging:
+  level:
+    root: INFO
+    org.example.card: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+# CBU API для dev (можно использовать моки)
+cbu:
+  api:
+    base-url: https://cbu.uz/ru/arkhiv-kursov-valyut/json
+
+server:
+  port: 8080
