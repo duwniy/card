@@ -1,0 +1,60 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-create-cards-table
+      author: developer
+      changes:
+        - createTable:
+            tableName: cards
+            columns:
+              - column:
+                  name: card_id
+                  type: varchar(36)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: varchar(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: balance
+                  type: bigint
+                  constraints:
+                    nullable: false
+                  defaultValue: "0"
+              - column:
+                  name: currency
+                  type: varchar(3)
+                  constraints:
+                    nullable: false
+                  defaultValue: "UZS"
+              - column:
+                  name: version
+                  type: bigint
+                  constraints:
+                    nullable: false
+                  defaultValue: "0"
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+                  defaultValueComputed: CURRENT_TIMESTAMP
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+                  defaultValueComputed: CURRENT_TIMESTAMP
+        - sql:
+            sql: ALTER TABLE cards ADD CONSTRAINT chk_card_status CHECK (status IN ('ACTIVE', 'BLOCKED', 'CLOSED'));
+        - sql:
+            sql: ALTER TABLE cards ADD CONSTRAINT chk_card_currency CHECK (currency IN ('UZS', 'USD'));
+        - sql:
+            sql: ALTER TABLE cards ADD CONSTRAINT chk_card_balance CHECK (balance >= 0);

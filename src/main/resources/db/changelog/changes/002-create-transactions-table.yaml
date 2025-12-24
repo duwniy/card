@@ -1,0 +1,72 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002-create-transactions-table
+      author: developer
+      changes:
+        - createTable:
+            tableName: transactions
+            columns:
+              - column:
+                  name: transaction_id
+                  type: varchar(36)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: external_id
+                  type: varchar(36)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: card_id
+                  type: varchar(36)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: type
+                  type: varchar(10)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: amount
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: after_balance
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: currency
+                  type: varchar(3)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: purpose
+                  type: varchar(20)
+              - column:
+                  name: exchange_rate
+                  type: bigint
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+                  defaultValueComputed: CURRENT_TIMESTAMP
+        - addForeignKeyConstraint:
+            baseTableName: transactions
+            baseColumnNames: card_id
+            constraintName: fk_transaction_card
+            referencedTableName: cards
+            referencedColumnNames: card_id
+            onDelete: CASCADE
+        - sql:
+            sql: ALTER TABLE transactions ADD CONSTRAINT chk_transaction_type CHECK (type IN ('DEBIT', 'CREDIT'));
+        - sql:
+            sql: ALTER TABLE transactions ADD CONSTRAINT chk_transaction_currency CHECK (currency IN ('UZS', 'USD'));
+        - sql:
+            sql: ALTER TABLE transactions ADD CONSTRAINT chk_transaction_purpose CHECK (purpose IS NULL OR purpose IN ('P2P', 'PAYMENT'));
+        - sql:
+            sql: ALTER TABLE transactions ADD CONSTRAINT chk_transaction_amount CHECK (amount > 0);

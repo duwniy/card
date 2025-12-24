@@ -1,0 +1,45 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: card-db-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: card_db
+      POSTGRES_USER: card_db
+      POSTGRES_PASSWORD: duwniy00
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - card-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U card_db -d card_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    container_name: card-app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/card_db
+      SPRING_DATASOURCE_USERNAME: card_db
+      SPRING_DATASOURCE_PASSWORD: duwniy00
+      SPRING_PROFILES_ACTIVE: dev
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - card-network
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  card-network:
+    driver: bridge

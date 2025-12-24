@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/card_db
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://localhost:5433/card_db  # ✅ ПОРТ 5433
+    username: card_db
+    password: duwniy00
 
   jpa:
     show-sql: true
@@ -23,7 +23,7 @@ logging:
     org.hibernate.SQL: DEBUG
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
-# CBU API для dev (можно использовать моки)
+# CBU API для dev
 cbu:
   api:
     base-url: https://cbu.uz/ru/arkhiv-kursov-valyut/json

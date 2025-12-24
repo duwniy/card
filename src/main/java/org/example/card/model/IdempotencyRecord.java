@@ -45,5 +45,5 @@ public class IdempotencyRecord {
     private LocalDateTime createdAt;
 
     @Column(name = "expired_at", nullable = false)
-    private LocalDateTime expiredAt;
+    private LocalDateTime expiresAt;
 }

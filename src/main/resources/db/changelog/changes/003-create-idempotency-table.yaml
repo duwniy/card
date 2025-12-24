@@ -1,0 +1,57 @@
+databaseChangeLog:
+  - changeSet:
+      id: 003-create-idempotency-table
+      author: developer
+      changes:
+        - createTable:
+            tableName: idempotency_records
+            columns:
+              - column:
+                  name: id
+                  type: bigserial
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: idempotency_key
+                  type: varchar(36)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: endpoint
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: resource_id
+                  type: varchar(36)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: resource_type
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: response_status
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: response_body
+                  type: text
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+                  defaultValueComputed: CURRENT_TIMESTAMP
+              - column:
+                  name: expires_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+        - sql:
+            sql: ALTER TABLE idempotency_records ADD CONSTRAINT chk_idempotency_resource_type CHECK (resource_type IN ('CARD', 'TRANSACTION'));

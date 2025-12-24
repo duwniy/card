@@ -42,7 +42,7 @@ public class IdempotencyService {
                     .resourceType(resourceType)
                     .responseStatus(responseStatus)
                     .responseBody(responseBodyJson)
-                    .expiredAt(LocalDateTime.now().plusHours(24))
+                    .expiresAt(LocalDateTime.now().plusHours(24))
                     .build();
 
             idempotencyRepository.save(record);

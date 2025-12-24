@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import java.util.stream.Collectors;
 
 @RestControllerAdvice
-public class GlobalExceptionHandler extends RuntimeException {
+public class GlobalExceptionHandler {
 
     //400 Bad Request
     @ExceptionHandler(MethodArgumentNotValidException.class)
@@ -71,7 +71,7 @@ public class GlobalExceptionHandler extends RuntimeException {
     }
 
     // 400 Bad Request
-    @ExceptionHandler(CardNotFoundException.class)
+    @ExceptionHandler(CardLimitExceededException.class)
     public ResponseEntity<ErrorResponseDto> handleCardLimitExceededException(CardLimitExceededException ex) {
         ErrorResponseDto error = ErrorResponseDto.builder()
                 .code("limit_exceeded")
@@ -96,7 +96,7 @@ public class GlobalExceptionHandler extends RuntimeException {
 
     //412 Precondition
     @ExceptionHandler(ETagMismatchException.class)
-    public ResponseEntity<ErrorResponseDto> handleEtagMismatchException(ExchangeRateException ex) {
+    public ResponseEntity<ErrorResponseDto> handleEtagMismatchException(ETagMismatchException ex) {
         ErrorResponseDto error = ErrorResponseDto.builder()
                 .code("etag_mismatch")
                 .message(ex.getMessage())
@@ -118,7 +118,7 @@ public class GlobalExceptionHandler extends RuntimeException {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
     }
 
-    // 400 Internal Server Error
+    // 500 Internal Server Error
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponseDto> handleGeneralException(Exception ex) {
         ErrorResponseDto error = ErrorResponseDto.builder()

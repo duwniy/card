@@ -17,7 +17,7 @@ public interface CardMapper {
     @Mapping(target = "userId", ignore = true)
     @Mapping(target = "version", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
-    @Mapping(target = "updatedAt", ignore = true)
+    @Mapping(target = "updateAt", ignore = true)
     void updateCard(CreateCardRequestDto dto, @MappingTarget Card card);
 
 }

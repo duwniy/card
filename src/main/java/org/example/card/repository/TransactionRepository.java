@@ -13,7 +13,7 @@ import java.util.Optional;
 
 public interface TransactionRepository extends JpaRepository<Transaction, String> {
 
-    Optional<Transaction> findByExternalId(String cardId, Pageable pageable);
+    Optional<Transaction> findByExternalId(String cardId);
     Page<Transaction> findByCardId(String cardId, Pageable pageable);
 
     // Filtration
