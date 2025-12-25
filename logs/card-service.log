@@ -365,3 +365,372 @@ This generated password is for development use only. Your security configuration
 2025-12-25 00:36:32.355 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-12-25 00:36:32.360 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-12-25 00:36:32.364 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-25 10:08:00.802 [main] INFO  org.example.card.CardApplication - Starting CardApplication using Java 17.0.17 with PID 128827 (/home/duwniy/IdeaProjects/card/target/classes started by duwniy in /home/duwniy/IdeaProjects/card)
+2025-12-25 10:08:00.813 [main] DEBUG org.example.card.CardApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-25 10:08:00.814 [main] INFO  org.example.card.CardApplication - The following 1 profile is active: "dev"
+2025-12-25 10:08:02.505 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-25 10:08:02.684 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 166 ms. Found 3 JPA repository interfaces.
+2025-12-25 10:08:03.467 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-25 10:08:03.477 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-25 10:08:03.478 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-25 10:08:03.478 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-25 10:08:03.524 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-25 10:08:03.525 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2655 ms
+2025-12-25 10:08:03.746 [main] DEBUG org.example.card.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-25 10:08:03.747 [main] DEBUG org.springframework.web.filter.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2025-12-25 10:08:03.859 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-25 10:08:03.989 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3205610d
+2025-12-25 10:08:03.991 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-25 10:08:04.112 [main] INFO  liquibase.database - Set default schema name to public
+2025-12-25 10:08:04.377 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-12-25 10:08:04.427 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-12-25 10:08:04.429 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-12-25 10:08:04.436 [main] INFO  liquibase.util - UPDATE SUMMARY
+2025-12-25 10:08:04.436 [main] INFO  liquibase.util - Run:                          0
+2025-12-25 10:08:04.436 [main] INFO  liquibase.util - Previously run:               4
+2025-12-25 10:08:04.436 [main] INFO  liquibase.util - Filtered out:                 0
+2025-12-25 10:08:04.436 [main] INFO  liquibase.util - -------------------------------
+2025-12-25 10:08:04.436 [main] INFO  liquibase.util - Total change sets:            4
+2025-12-25 10:08:04.437 [main] INFO  liquibase.util - Update summary generated
+2025-12-25 10:08:04.438 [main] INFO  liquibase.command - Command execution complete
+2025-12-25 10:08:04.816 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-25 10:08:04.858 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-25 10:08:05.478 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-25 10:08:05.676 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-25 10:08:06.538 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: aacead87-e62e-4cc8-bdad-5b1edcfcfad7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-25 10:08:06.550 [main] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-25 10:08:06.670 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+2025-12-25 10:08:06.708 [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-25 10:08:06.855 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-12-25 10:08:06.919 [main] DEBUG org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-25 10:08:07.024 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-25 10:08:07.061 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-25 10:08:07.462 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-25 10:08:07.470 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-25 10:08:07.483 [main] INFO  org.example.card.CardApplication - Started CardApplication in 7.331 seconds (process running for 8.719)
+2025-12-25 10:08:08.056 [RMI TCP Connection(1)-192.168.0.103] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-25 10:08:08.057 [RMI TCP Connection(1)-192.168.0.103] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-25 10:08:08.057 [RMI TCP Connection(1)-192.168.0.103] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-12-25 10:08:08.057 [RMI TCP Connection(1)-192.168.0.103] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-12-25 10:08:08.057 [RMI TCP Connection(1)-192.168.0.103] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-12-25 10:08:08.059 [RMI TCP Connection(1)-192.168.0.103] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@59c69874
+2025-12-25 10:08:08.060 [RMI TCP Connection(1)-192.168.0.103] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2d25a125
+2025-12-25 10:08:08.060 [RMI TCP Connection(1)-192.168.0.103] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-25 10:08:08.060 [RMI TCP Connection(1)-192.168.0.103] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-25 10:08:10.987 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/index.html
+2025-12-25 10:08:11.004 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:08:11.005 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:08:11.011 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/index.html
+2025-12-25 10:08:11.015 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/index.html", parameters={}
+2025-12-25 10:08:11.018 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:08:11.039 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:08:11.107 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui.css
+2025-12-25 10:08:11.107 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/index.css
+2025-12-25 10:08:11.107 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-bundle.js
+2025-12-25 10:08:11.107 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-25 10:08:11.108 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-initializer.js
+2025-12-25 10:08:11.108 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:08:11.109 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:08:11.109 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:08:11.109 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:08:11.109 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:08:11.110 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:08:11.110 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:08:11.110 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:08:11.110 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:08:11.110 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui.css
+2025-12-25 10:08:11.110 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-25 10:08:11.110 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-ui.css", parameters={}
+2025-12-25 10:08:11.110 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:08:11.110 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2025-12-25 10:08:11.111 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/index.css
+2025-12-25 10:08:11.111 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-bundle.js
+2025-12-25 10:08:11.111 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/index.css", parameters={}
+2025-12-25 10:08:11.111 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2025-12-25 10:08:11.111 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-initializer.js
+2025-12-25 10:08:11.112 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-12-25 10:08:11.112 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:08:11.112 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:08:11.112 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:08:11.113 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:08:11.113 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:08:11.117 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:08:11.119 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:08:11.122 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:08:11.141 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:08:11.144 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:08:11.492 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2025-12-25 10:08:11.493 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:08:11.493 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:08:11.495 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2025-12-25 10:08:11.495 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v3/api-docs/swagger-config", parameters={}
+2025-12-25 10:08:11.496 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-12-25 10:08:11.517 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+2025-12-25 10:08:11.522 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2025-12-25 10:08:11.529 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:08:11.534 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/favicon-32x32.png
+2025-12-25 10:08:11.536 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:08:11.536 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:08:11.537 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/favicon-32x32.png
+2025-12-25 10:08:11.537 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/favicon-32x32.png", parameters={}
+2025-12-25 10:08:11.539 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:08:11.541 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /v3/api-docs
+2025-12-25 10:08:11.542 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:08:11.543 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:08:11.543 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:08:11.544 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /v3/api-docs
+2025-12-25 10:08:11.544 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v3/api-docs", parameters={}
+2025-12-25 10:08:11.546 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-12-25 10:08:12.047 [http-nio-8080-exec-9] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 484 ms
+2025-12-25 10:08:12.079 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-12-25 10:08:12.081 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-12-25 10:08:12.082 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:09:24.274 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/auth/token/1234
+2025-12-25 10:09:24.275 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:09:24.275 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:09:24.276 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/auth/token/1234
+2025-12-25 10:09:24.277 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/auth/token/1234", parameters={}
+2025-12-25 10:09:24.277 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.example.card.controller.AuthController#generateToken(Long)
+2025-12-25 10:09:24.278 [http-nio-8080-exec-4] INFO  org.example.card.controller.AuthController - Generating test token for user: 1234
+2025-12-25 10:09:24.386 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+2025-12-25 10:09:24.387 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing ["eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0IiwiaWF0IjoxNzY2NjM5MzY0LCJleHAiOjE3NjY3MjU3NjR9.h7gblkZFCZ10Iz (truncated)..."]
+2025-12-25 10:09:24.389 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:12:37.801 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/v1/cards
+2025-12-25 10:12:37.886 [http-nio-8080-exec-7] DEBUG org.example.card.security.JwtAuthenticationFilter - Authenticated user with ID: 1234
+2025-12-25 10:12:37.888 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /api/v1/cards
+2025-12-25 10:12:37.888 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/api/v1/cards", parameters={}
+2025-12-25 10:12:37.888 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.example.card.controller.CardController#createCard(CreateCardRequestDto, String, Authentication)
+2025-12-25 10:12:37.923 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CreateCardRequestDto(userId=0, status=ACTIVE, initialAmount=10000, currency=UZS)]
+2025-12-25 10:12:37.999 [http-nio-8080-exec-7] INFO  org.example.card.controller.CardController - Creating card for user: 1234, idempotency key: 550e8400-e29b-41d4-a716-446655440000
+2025-12-25 10:12:38.017 [http-nio-8080-exec-7] INFO  org.example.card.service.CardService - Creating card for user: 1234, idempotency key: 550e8400-e29b-41d4-a716-446655440000
+2025-12-25 10:12:38.133 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        ir1_0.id,
+        ir1_0.created_at,
+        ir1_0.endpoint,
+        ir1_0.expired_at,
+        ir1_0.idempotency_key,
+        ir1_0.resource_id,
+        ir1_0.resource_type,
+        ir1_0.response_body,
+        ir1_0.resource_status 
+    from
+        idempotency_records ir1_0 
+    where
+        ir1_0.idempotency_key=?
+2025-12-25 10:12:38.157 [http-nio-8080-exec-7] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42703
+2025-12-25 10:12:38.157 [http-nio-8080-exec-7] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ERROR: column ir1_0.expired_at does not exist
+  Hint: Perhaps you meant to reference the column "ir1_0.expires_at".
+  Position: 49
+2025-12-25 10:12:38.180 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Using @ExceptionHandler org.example.card.exception.GlobalExceptionHandler#handleGeneralException(Exception)
+2025-12-25 10:12:38.189 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-12-25 10:12:38.191 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [ErrorResponseDto(code=internal_error, message=An unexpected error occurred: JDBC exception executing (truncated)...]
+2025-12-25 10:12:38.195 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select ir1_0.id,ir1_0.created_at,ir1_0.endpoint,ir1_0.expired_at,ir1_0.idempotency_key,ir1_0.resource_id,ir1_0.resource_type,ir1_0.response_body,ir1_0.resource_status from idempotency_records ir1_0 where ir1_0.idempotency_key=?] [ERROR: column ir1_0.expired_at does not exist<EOL>  Hint: Perhaps you meant to reference the column "ir1_0.expires_at".<EOL>  Position: 49] [n/a]; SQL [n/a]]
+2025-12-25 10:12:38.196 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2025-12-25 10:16:07.167 [main] INFO  org.example.card.CardApplication - Starting CardApplication using Java 17.0.17 with PID 131456 (/home/duwniy/IdeaProjects/card/target/classes started by duwniy in /home/duwniy/IdeaProjects/card)
+2025-12-25 10:16:07.172 [main] DEBUG org.example.card.CardApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-25 10:16:07.173 [main] INFO  org.example.card.CardApplication - The following 1 profile is active: "dev"
+2025-12-25 10:16:08.037 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-25 10:16:08.141 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96 ms. Found 3 JPA repository interfaces.
+2025-12-25 10:16:08.729 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-25 10:16:08.740 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-25 10:16:08.742 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-25 10:16:08.742 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-25 10:16:08.780 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-25 10:16:08.782 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1572 ms
+2025-12-25 10:16:08.957 [main] DEBUG org.example.card.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-25 10:16:08.958 [main] DEBUG org.springframework.web.filter.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2025-12-25 10:16:09.043 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-25 10:16:09.165 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7294a684
+2025-12-25 10:16:09.166 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-25 10:16:09.263 [main] INFO  liquibase.database - Set default schema name to public
+2025-12-25 10:16:09.495 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-12-25 10:16:09.544 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-12-25 10:16:09.547 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-12-25 10:16:09.553 [main] INFO  liquibase.util - UPDATE SUMMARY
+2025-12-25 10:16:09.553 [main] INFO  liquibase.util - Run:                          0
+2025-12-25 10:16:09.553 [main] INFO  liquibase.util - Previously run:               4
+2025-12-25 10:16:09.554 [main] INFO  liquibase.util - Filtered out:                 0
+2025-12-25 10:16:09.554 [main] INFO  liquibase.util - -------------------------------
+2025-12-25 10:16:09.554 [main] INFO  liquibase.util - Total change sets:            4
+2025-12-25 10:16:09.554 [main] INFO  liquibase.util - Update summary generated
+2025-12-25 10:16:09.555 [main] INFO  liquibase.command - Command execution complete
+2025-12-25 10:16:09.937 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-25 10:16:09.973 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-25 10:16:10.607 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-25 10:16:10.821 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-25 10:16:11.592 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a3db2db5-d5ef-4848-b250-fc389c8d5d7f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-25 10:16:11.607 [main] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-25 10:16:11.746 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+2025-12-25 10:16:11.792 [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-25 10:16:11.896 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-12-25 10:16:11.956 [main] DEBUG org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-25 10:16:12.071 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-25 10:16:12.112 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-25 10:16:12.522 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-25 10:16:14.551 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-25 10:16:14.559 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-25 10:16:14.564 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-25 10:16:14.569 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-25 10:16:14.600 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-25 10:16:14.633 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-12-25 10:17:18.522 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-25 10:17:18.525 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-25 10:17:20.576 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-25 10:17:20.581 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-25 10:17:20.587 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-25 10:17:32.304 [main] INFO  org.example.card.CardApplication - Starting CardApplication using Java 17.0.17 with PID 131941 (/home/duwniy/IdeaProjects/card/target/classes started by duwniy in /home/duwniy/IdeaProjects/card)
+2025-12-25 10:17:32.313 [main] DEBUG org.example.card.CardApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-25 10:17:32.315 [main] INFO  org.example.card.CardApplication - The following 1 profile is active: "dev"
+2025-12-25 10:17:33.889 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-25 10:17:34.093 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 188 ms. Found 3 JPA repository interfaces.
+2025-12-25 10:17:35.194 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-25 10:17:35.214 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-25 10:17:35.217 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-25 10:17:35.217 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-25 10:17:35.285 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-25 10:17:35.288 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2906 ms
+2025-12-25 10:17:35.593 [main] DEBUG org.example.card.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-25 10:17:35.595 [main] DEBUG org.springframework.web.filter.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2025-12-25 10:17:35.759 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-25 10:17:35.974 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c0272e0
+2025-12-25 10:17:35.976 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-25 10:17:36.160 [main] INFO  liquibase.database - Set default schema name to public
+2025-12-25 10:17:36.600 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-12-25 10:17:36.689 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-12-25 10:17:36.693 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-12-25 10:17:36.706 [main] INFO  liquibase.util - UPDATE SUMMARY
+2025-12-25 10:17:36.706 [main] INFO  liquibase.util - Run:                          0
+2025-12-25 10:17:36.706 [main] INFO  liquibase.util - Previously run:               4
+2025-12-25 10:17:36.707 [main] INFO  liquibase.util - Filtered out:                 0
+2025-12-25 10:17:36.707 [main] INFO  liquibase.util - -------------------------------
+2025-12-25 10:17:36.707 [main] INFO  liquibase.util - Total change sets:            4
+2025-12-25 10:17:36.708 [main] INFO  liquibase.util - Update summary generated
+2025-12-25 10:17:36.710 [main] INFO  liquibase.command - Command execution complete
+2025-12-25 10:17:37.298 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-25 10:17:37.360 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-25 10:17:38.218 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-25 10:17:38.458 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-25 10:17:39.239 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2134080d-e25b-4b5c-8de4-bdc7605b4e7c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-25 10:17:39.253 [main] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-25 10:17:39.378 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+2025-12-25 10:17:39.425 [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-25 10:17:39.524 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-12-25 10:17:39.584 [main] DEBUG org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-25 10:17:39.706 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-25 10:17:39.750 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-25 10:17:40.144 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-25 10:17:40.153 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-25 10:17:40.168 [main] INFO  org.example.card.CardApplication - Started CardApplication in 8.487 seconds (process running for 9.58)
+2025-12-25 10:17:49.196 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-25 10:17:49.197 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-25 10:17:49.197 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-12-25 10:17:49.198 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-12-25 10:17:49.198 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-12-25 10:17:49.199 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@15c24b0c
+2025-12-25 10:17:49.200 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@266b1bd9
+2025-12-25 10:17:49.200 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-25 10:17:49.201 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-25 10:17:49.236 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/index.html
+2025-12-25 10:17:49.254 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:17:49.254 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:17:49.263 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/index.html
+2025-12-25 10:17:49.267 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/index.html", parameters={}
+2025-12-25 10:17:49.272 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:17:49.294 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:17:49.873 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui.css
+2025-12-25 10:17:49.873 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/index.css
+2025-12-25 10:17:49.875 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:17:49.875 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:17:49.876 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:17:49.876 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:17:49.877 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui.css
+2025-12-25 10:17:49.877 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/index.css
+2025-12-25 10:17:49.877 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-ui.css", parameters={}
+2025-12-25 10:17:49.877 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/index.css", parameters={}
+2025-12-25 10:17:49.879 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:17:49.879 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:17:49.881 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-25 10:17:49.881 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-initializer.js
+2025-12-25 10:17:49.882 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:17:49.882 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:17:49.883 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:17:49.883 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:17:49.883 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:17:49.883 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-bundle.js
+2025-12-25 10:17:49.884 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-25 10:17:49.884 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:17:49.884 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2025-12-25 10:17:49.884 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:17:49.885 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-initializer.js
+2025-12-25 10:17:49.885 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:17:49.886 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-12-25 10:17:49.886 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-bundle.js
+2025-12-25 10:17:49.886 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2025-12-25 10:17:49.886 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:17:49.887 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:17:49.887 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:17:49.895 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:17:49.917 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:17:49.930 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:17:50.349 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2025-12-25 10:17:50.351 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:17:50.352 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:17:50.353 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2025-12-25 10:17:50.353 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v3/api-docs/swagger-config", parameters={}
+2025-12-25 10:17:50.354 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-12-25 10:17:50.378 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+2025-12-25 10:17:50.406 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2025-12-25 10:17:50.413 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:17:50.420 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/favicon-32x32.png
+2025-12-25 10:17:50.421 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:17:50.422 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:17:50.423 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/favicon-32x32.png
+2025-12-25 10:17:50.424 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/favicon-32x32.png", parameters={}
+2025-12-25 10:17:50.425 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-25 10:17:50.428 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:17:50.504 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /v3/api-docs
+2025-12-25 10:17:50.505 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-25 10:17:50.505 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.session.SessionManagementFilter - Request requested invalid session id E5990064456CD85D8639F95C5EA0B960
+2025-12-25 10:17:50.506 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /v3/api-docs
+2025-12-25 10:17:50.506 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v3/api-docs", parameters={}
+2025-12-25 10:17:50.507 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-12-25 10:17:51.045 [http-nio-8080-exec-9] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 520 ms
+2025-12-25 10:17:51.076 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-12-25 10:17:51.078 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-12-25 10:17:51.079 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-25 10:23:34.228 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-25 10:23:34.232 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-25 10:23:36.282 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-25 10:23:36.287 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-25 10:23:36.294 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
