@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: ${DATABASE_URL:jdbc:postgresql://postgres:5432/card_db}
-    username: ${DATABASE_USERNAME:card_db}
-    password: ${DATABASE_PASSWORD:duwniy00}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://postgres:5432/card_db}
+    username: ${SPRING_DATASOURCE_USERNAME:card_db}
+    password: ${SPRING_DATASOURCE_PASSWORD:duwniy00}
 
   jpa:
     show-sql: false
@@ -31,7 +31,7 @@ cbu:
 server:
   port: ${PORT:8080}
 
-# JWT для продакшена (обязательно из переменных окружения!)
+# JWT для продакшена
 jwt:
   secret: ${JWT_SECRET}
   expiration: ${JWT_EXPIRATION:86400000}
