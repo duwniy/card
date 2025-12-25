@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: duwniy
+      changes:
+        - addColumn:
+            tableName: idempotency_records
+            columns:
+              - column:
+                  name: resource_status
+                  type: varchar(50)

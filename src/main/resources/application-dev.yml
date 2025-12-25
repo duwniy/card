@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5433/card_db  # ✅ ПОРТ 5433
+    url: jdbc:postgresql://localhost:5433/card_db
     username: card_db
     password: duwniy00
 
@@ -13,7 +13,7 @@ spring:
   liquibase:
     enabled: true
 
-# Logging для разработки
+# Logging
 logging:
   level:
     root: INFO
@@ -23,7 +23,7 @@ logging:
     org.hibernate.SQL: DEBUG
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
-# CBU API для dev
+# CBU API
 cbu:
   api:
     base-url: https://cbu.uz/ru/arkhiv-kursov-valyut/json

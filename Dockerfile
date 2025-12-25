@@ -1,19 +1,43 @@
-# Этап 1: Сборка
-FROM maven:3.9.6-eclipse-temurin-17-alpine AS build
-WORKDIR /app
-# Копируем pom.xml и скачиваем зависимости (кешируем этот слой)
-COPY pom.xml .
-RUN mvn dependency:go-offline
+FROM eclipse-temurin:17-jdk-alpine AS build
 
-# Копируем исходники и собираем проект
+WORKDIR /app
+
+# Копируем Maven wrapper и pom.xml
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
+
+# Скачиваем зависимости (кешируется)
+RUN ./mvnw dependency:go-offline
+
+# Копируем исходники
 COPY src ./src
-RUN mvn clean package -DskipTests
 
-# Этап 2: Запуск
+# Собираем приложение
+RUN ./mvnw clean package -DskipTests
+
+# Production stage
 FROM eclipse-temurin:17-jre-alpine
+
 WORKDIR /app
-# Копируем только готовый JAR из первого этапа
+
+# Копируем jar из build stage
 COPY --from=build /app/target/*.jar app.jar
 
-# Настройки для оптимизации Java в контейнере
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Создаем пользователя без прав root
+RUN addgroup -S spring && adduser -S spring -G spring
+USER spring:spring
+
+# Открываем порт
+EXPOSE 8080
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=60s --retries=3 \
+  CMD wget --no-verbose --tries=1 --spider http://localhost:8080/actuator/health || exit 1
+
+# Запуск приложения
+ENTRYPOINT ["java", \
+    "-Djava.security.egd=file:/dev/./urandom", \
+    "-XX:MaxRAMPercentage=75.0", \
+    "-XX:+UseContainerSupport", \
+    "-jar", \
+    "app.jar"]

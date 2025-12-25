@@ -21,6 +21,7 @@ import java.util.UUID;
 @Builder
 public class Card {
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "card_id", updatable = false, nullable = false)
     private String cardId;
 
@@ -50,10 +51,8 @@ public class Card {
     @Column(name = "updated_at", nullable = false)
     private LocalDateTime updateAt;
 
+    @PrePersist
     public void prePersist() {
-        if (cardId == null) {
-            cardId = UUID.randomUUID().toString();
-        }
         if (status == null) {
             status = CardStatus.ACTIVE;
         }

@@ -1,10 +1,7 @@
 package org.example.card.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
@@ -13,11 +10,13 @@ import java.time.LocalDateTime;
 @Table(name = "idempotency_records", indexes = {
         @Index(name = "idx_idempotency_key", columnList = "idempotency_key", unique = true)
 })
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class IdempotencyRecord {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -34,7 +33,7 @@ public class IdempotencyRecord {
     @Column(name = "resource_type", nullable = false)
     private String resourceType;
 
-    @Column(name = "resource_status", nullable = false)
+    @Column(name = "response_status", nullable = false)
     private Integer responseStatus;
 
     @Column(name = "response_body", columnDefinition = "TEXT")
